@@ -1,0 +1,11 @@
+# 동기 .txt 업로드 → 400 기대
+# 실행시각: 2026-11-04 11:51:41 KST
+$ curl -s -i -F 'image=@/tmp/bad.txt;type=text/plain' http://127.0.0.1:8000/api/sync/classify/
+
+HTTP/1.1 400 Bad Request
+date: Wed, 04 Nov 2026 02:51:41 GMT
+server: uvicorn
+content-length: 56
+content-type: application/json
+
+{"detail":"올바른 이미지 파일이 아닙니다."}

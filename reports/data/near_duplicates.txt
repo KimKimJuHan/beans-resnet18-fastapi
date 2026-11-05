@@ -1,0 +1,5 @@
+images 1295
+cross-split pairs by hamming distance (<=10): {6: 3, 7: 3, 8: 6, 9: 12, 10: 44}
+(6, ('train', 'angular_leaf_spot', 'angular_leaf_spot_train.192.jpg'), ('validation', 'angular_leaf_spot', 'angular_leaf_spot_val.25.jpg'))
+(6, ('train', 'angular_leaf_spot', 'angular_leaf_spot_train.242.jpg'), ('test', 'healthy', 'healthy_test.24.jpg'))
+(6, ('train', 'angular_leaf_spot', 'angular_leaf_spot_train.298.jpg'), ('test', 'bean_rust', 'bean_rust_test.37.jpg'))

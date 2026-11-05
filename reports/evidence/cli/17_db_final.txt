@@ -1,0 +1,33 @@
+## 전체 작업 이력 (KST)
+ id | status |    top1_label     | score  | inference_ms | cache_hit | has_error | created_kst | took_ms 
+----+--------+-------------------+--------+--------------+-----------+-----------+-------------+---------
+  1 | done   | healthy           | 0.6369 |              | t         | f         | 11:46:46    |     110
+  2 | done   | bean_rust         | 0.6051 |      3059.36 | f         | f         | 11:51:37    |    3094
+  3 | done   | angular_leaf_spot | 0.4623 |              | t         | f         | 11:52:21    |   26913
+  4 | done   | angular_leaf_spot | 0.5146 |      2624.61 | f         | f         | 11:55:44    |    2647
+  5 | done   | angular_leaf_spot | 0.5146 |              | t         | f         | 11:55:47    |      14
+  6 | done   | angular_leaf_spot | 0.3825 |        17.65 | f         | f         | 11:55:47    |      32
+  7 | done   | angular_leaf_spot | 0.3825 |              | t         | f         | 11:55:48    |      10
+  8 | done   | bean_rust         | 0.5000 |        20.57 | f         | f         | 11:55:48    |      33
+  9 | done   | bean_rust         | 0.5000 |              | t         | f         | 11:55:48    |      10
+ 10 | done   | angular_leaf_spot | 0.5796 |        18.96 | f         | f         | 11:55:48    |      35
+ 11 | done   | angular_leaf_spot | 0.5796 |              | t         | f         | 11:55:49    |       9
+ 12 | done   | bean_rust         | 0.5911 |        16.65 | f         | f         | 11:55:49    |      31
+ 13 | done   | bean_rust         | 0.5911 |              | t         | f         | 11:55:49    |       9
+(13 rows)
+
+## 상태별 개수
+ status | count 
+--------+-------
+ done   |    13
+(1 row)
+
+## 캐시별 추론시간
+ cache_hit | count | avg_ms | min_ms | max_ms  
+-----------+-------+--------+--------+---------
+ f         |     6 | 959.63 |  16.65 | 3059.36
+ t         |     7 |        |        |        
+(2 rows)
+
+## media/jobs 파일 수
+13

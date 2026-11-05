@@ -1,0 +1,48 @@
+health: 200 {'status': 'ok'}
+
+[warmup] 모델 로딩 등 첫 요청 (요약에서 제외)
+sync   warmup run=0 cache=MISS http=23.4ms final=23.4ms infer=18.59 label=angular_leaf_spot (정답 angular_leaf_spot)
+
+[sync] MISS → HIT
+sync   MISS   run=1 cache=MISS http=20.5ms final=20.5ms infer=16.18 label=bean_rust (정답 bean_rust)
+sync   HIT    run=1 cache=HIT  http=2.0ms final=2.0ms infer= label=bean_rust (정답 bean_rust)
+sync   MISS   run=2 cache=MISS http=18.2ms final=18.2ms infer=14.46 label=healthy (정답 healthy)
+sync   HIT    run=2 cache=HIT  http=1.5ms final=1.5ms infer= label=healthy (정답 healthy)
+sync   MISS   run=3 cache=MISS http=18.2ms final=18.2ms infer=13.91 label=angular_leaf_spot (정답 angular_leaf_spot)
+sync   HIT    run=3 cache=HIT  http=1.4ms final=1.4ms infer= label=angular_leaf_spot (정답 angular_leaf_spot)
+sync   MISS   run=4 cache=MISS http=20.2ms final=20.2ms infer=16.35 label=bean_rust (정답 bean_rust)
+sync   HIT    run=4 cache=HIT  http=1.4ms final=1.4ms infer= label=bean_rust (정답 bean_rust)
+sync   MISS   run=5 cache=MISS http=20.5ms final=20.5ms infer=16.38 label=healthy (정답 healthy)
+sync   HIT    run=5 cache=HIT  http=1.6ms final=1.6ms infer= label=healthy (정답 healthy)
+
+[async] MISS → HIT
+async  MISS   run=1 cache=MISS http=13.0ms final=2661.4ms infer=2624.61 label=angular_leaf_spot (정답 angular_leaf_spot)
+async  HIT    run=1 cache=HIT  http=11.4ms final=223.0ms infer= label=angular_leaf_spot (정답 angular_leaf_spot)
+async  MISS   run=2 cache=MISS http=12.8ms final=225.0ms infer=17.65 label=angular_leaf_spot (정답 bean_rust)
+async  HIT    run=2 cache=HIT  http=11.7ms final=220.6ms infer= label=angular_leaf_spot (정답 bean_rust)
+async  MISS   run=3 cache=MISS http=11.3ms final=221.7ms infer=20.57 label=bean_rust (정답 healthy)
+async  HIT    run=3 cache=HIT  http=10.7ms final=216.3ms infer= label=bean_rust (정답 healthy)
+async  MISS   run=4 cache=MISS http=11.5ms final=217.7ms infer=18.96 label=angular_leaf_spot (정답 angular_leaf_spot)
+async  HIT    run=4 cache=HIT  http=13.6ms final=221.4ms infer= label=angular_leaf_spot (정답 angular_leaf_spot)
+async  MISS   run=5 cache=MISS http=12.3ms final=221.7ms infer=16.65 label=bean_rust (정답 bean_rust)
+async  HIT    run=5 cache=HIT  http=11.3ms final=218.9ms infer= label=bean_rust (정답 bean_rust)
+
+# 응답시간 측정 요약 (중앙값, ms)
+
+- 서버: http://127.0.0.1:8000
+- 이미지 폴더: dataset/test
+- 반복: 조건별 5회 (warmup 1회 제외)
+- 비동기 상태조회 간격: 0.2초 (final_ms에 포함)
+
+| 경로 | 캐시 | 횟수 | HTTP 응답 | 최종 결과 확인 | 모델 추론(inference_ms) |
+|---|---|---:|---:|---:|---:|
+| 동기 | MISS | 5 | 20.2 | 20.2 | 16.2 |
+| 동기 | HIT | 5 | 1.5 | 1.5 | NULL |
+| 비동기(HTTP=접수) | MISS | 5 | 12.3 | 221.7 | 19.0 |
+| 비동기(HTTP=접수) | HIT | 5 | 11.4 | 220.6 | NULL |
+
+- 예상과 다른 캐시 상태: 0건 (이미 보낸 이미지였거나 캐시가 꺼져 있으면 발생)
+- HIT의 inference_ms=NULL은 모델 추론을 생략했다는 뜻이며 0ms가 아닙니다.
+- 비동기 HTTP 시간은 '접수' 시간이고, 실제 결과는 '최종 결과 확인' 열입니다.
+
+저장: reports/data/timings.csv, reports/data/timings_summary.md

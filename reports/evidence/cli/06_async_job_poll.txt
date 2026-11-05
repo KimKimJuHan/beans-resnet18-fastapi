@@ -1,0 +1,6 @@
+# 상태 폴링 (1초 간격, 최대 30회) job_id=2
+[11:51:37] try=1 {"job_id":2,"status":"running","model_id":"artifacts/beans_resnet18","top1":null,"all":null,"inference_ms":null,"cache_hit":null,"error_message":null}
+[11:51:38] try=2 {"job_id":2,"status":"running","model_id":"artifacts/beans_resnet18","top1":null,"all":null,"inference_ms":null,"cache_hit":null,"error_message":null}
+[11:51:39] try=3 {"job_id":2,"status":"running","model_id":"artifacts/beans_resnet18","top1":null,"all":null,"inference_ms":null,"cache_hit":null,"error_message":null}
+[11:51:40] try=4 {"job_id":2,"status":"running","model_id":"artifacts/beans_resnet18","top1":null,"all":null,"inference_ms":null,"cache_hit":null,"error_message":null}
+[11:51:41] try=5 {"job_id":2,"status":"done","model_id":"artifacts/beans_resnet18","top1":{"label":"bean_rust","score":0.6051397323608398},"all":[{"label":"bean_rust","score":0.6051397323608398},{"label":"healthy","score":0.2607002258300781},{"label":"angular_leaf_spot","score":0.13415999710559845}],"inference_ms":3059.36,"cache_hit":false,"error_message":null}

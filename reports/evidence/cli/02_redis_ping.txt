@@ -1,0 +1,5 @@
+# Redis 연결
+# 실행시각: 2026-11-04 11:51:37 KST
+$ docker compose exec -T redis redis-cli ping
+
+PONG

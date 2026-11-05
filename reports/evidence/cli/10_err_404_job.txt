@@ -1,0 +1,11 @@
+# 없는 job_id → 404 기대
+# 실행시각: 2026-11-04 11:51:41 KST
+$ curl -s -i http://127.0.0.1:8000/api/async/jobs/999999/
+
+HTTP/1.1 404 Not Found
+date: Wed, 04 Nov 2026 02:51:41 GMT
+server: uvicorn
+content-length: 43
+content-type: application/json
+
+{"detail":"해당 작업이 없습니다."}

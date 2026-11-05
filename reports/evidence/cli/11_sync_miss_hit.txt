@@ -1,0 +1,7 @@
+# 캐시 FLUSHDB 직후 같은 파일 2회 동기 요청. time_total=클라이언트 측정 HTTP 전체시간(초)
+--- 요청 1
+{"model_id":"artifacts/beans_resnet18","top1":{"label":"angular_leaf_spot","score":0.46233341097831726},"all":[{"label":"angular_leaf_spot","score":0.46233341097831726},{"label":"bean_rust","score":0.3557720482349396},{"label":"healthy","score":0.18189455568790436}],"inference_ms":19.97,"cache_hit":false}
+[time_total=0.026249s http=200]
+--- 요청 2
+{"model_id":"artifacts/beans_resnet18","top1":{"label":"angular_leaf_spot","score":0.46233341097831726},"all":[{"label":"angular_leaf_spot","score":0.46233341097831726},{"label":"bean_rust","score":0.3557720482349396},{"label":"healthy","score":0.18189455568790436}],"inference_ms":null,"cache_hit":true}
+[time_total=0.004209s http=200]

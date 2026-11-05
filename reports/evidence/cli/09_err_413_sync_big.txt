@@ -1,0 +1,13 @@
+# 동기 5MB 초과 → 413 기대
+# 실행시각: 2026-11-04 11:51:41 KST
+$ curl -s -i -F 'image=@/tmp/big.jpg;type=image/jpeg' http://127.0.0.1:8000/api/sync/classify/
+
+HTTP/1.1 100 Continue
+
+HTTP/1.1 413 Request Entity Too Large
+date: Wed, 04 Nov 2026 02:51:41 GMT
+server: uvicorn
+content-length: 50
+content-type: application/json
+
+{"detail":"5MB 이하 파일만 허용합니다."}

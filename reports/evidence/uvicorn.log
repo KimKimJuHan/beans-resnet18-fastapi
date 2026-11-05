@@ -1,0 +1,140 @@
+INFO:     Started server process [16339]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:57814 - "GET / HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:57814 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "GET /static/style.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57814 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:50584 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50584 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+Device set to use cpu
+INFO:     127.0.0.1:50590 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55978 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40730 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40730 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:40732 - "GET /vision/async/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:40732 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60314 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:39622 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39622 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47328 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47328 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47330 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43370 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:34996 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35204 - "GET /vision/async/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35204 - "GET /static/style.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:35218 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:35218 - "GET /api/async/jobs/1/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45290 - "GET /vision/sync/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45302 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46606 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46612 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:46624 - "GET /api/async/jobs/2/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46634 - "GET /api/async/jobs/2/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46650 - "GET /api/async/jobs/2/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46664 - "GET /api/async/jobs/2/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57288 - "GET /api/async/jobs/2/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57292 - "POST /api/sync/classify/ HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:57296 - "POST /api/async/classify/ HTTP/1.1" 400 Bad Request
+INFO:     127.0.0.1:57302 - "POST /api/sync/classify/ HTTP/1.1" 413 Request Entity Too Large
+INFO:     127.0.0.1:57314 - "GET /api/async/jobs/999999/ HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57324 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57328 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41042 - "GET /vision/async/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41052 - "GET /api/async/jobs/3/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33330 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33336 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33352 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33358 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33364 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33376 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33388 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33396 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33408 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33418 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33434 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33442 - "POST /api/sync/classify/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33448 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33464 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33476 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33480 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33496 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33502 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33510 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33512 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33520 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33522 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33536 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33538 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33544 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33554 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33556 - "GET /api/async/jobs/4/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33564 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33580 - "GET /api/async/jobs/5/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33582 - "GET /api/async/jobs/5/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33590 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33602 - "GET /api/async/jobs/6/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33612 - "GET /api/async/jobs/6/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33628 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33642 - "GET /api/async/jobs/7/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33652 - "GET /api/async/jobs/7/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33654 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33666 - "GET /api/async/jobs/8/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33668 - "GET /api/async/jobs/8/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33674 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33688 - "GET /api/async/jobs/9/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33702 - "GET /api/async/jobs/9/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33710 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33722 - "GET /api/async/jobs/10/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33734 - "GET /api/async/jobs/10/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33744 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33746 - "GET /api/async/jobs/11/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33762 - "GET /api/async/jobs/11/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33776 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33792 - "GET /api/async/jobs/12/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33800 - "GET /api/async/jobs/12/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33802 - "POST /api/async/classify/ HTTP/1.1" 202 Accepted
+INFO:     127.0.0.1:33810 - "GET /api/async/jobs/13/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33820 - "GET /api/async/jobs/13/ HTTP/1.1" 200 OK

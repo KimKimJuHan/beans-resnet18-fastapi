@@ -1,0 +1,10 @@
+# 비동기 접수 (캐시 FLUSHDB 직후 = MISS 조건), 이미지: dataset/test/bean_rust/bean_rust_test.0.jpg
+$ curl -i -F image=@dataset/test/bean_rust/bean_rust_test.0.jpg http://127.0.0.1:8000/api/async/classify/
+
+HTTP/1.1 202 Accepted
+date: Wed, 04 Nov 2026 02:51:37 GMT
+server: uvicorn
+content-length: 63
+content-type: application/json
+
+{"job_id":2,"status":"queued","check_url":"/api/async/jobs/2/"}

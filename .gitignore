@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.env
+dataset/
+# 모델 가중치는 용량 때문에 제외 (학습 기록 json·설정 파일은 증빙으로 포함)
+artifacts/**/*.safetensors
+artifacts/**/*.bin
+media/jobs/*
+!media/jobs/.gitkeep
+*.db

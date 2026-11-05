@@ -1,0 +1,23 @@
+# image_jobs 테이블 구조
+# 실행시각: 2026-11-04 11:51:42 KST
+$ docker compose exec -T postgres psql -U vision_user -d vision_db -c '\d image_jobs'
+
+                                        Table "public.image_jobs"
+    Column     |           Type           | Collation | Nullable |                Default                 
+---------------+--------------------------+-----------+----------+----------------------------------------
+ id            | integer                  |           | not null | nextval('image_jobs_id_seq'::regclass)
+ image_path    | character varying(150)   |           | not null | 
+ status        | character varying(20)    |           | not null | 
+ model_id      | character varying(255)   |           | not null | 
+ top1_label    | character varying(200)   |           |          | 
+ top1_score    | double precision         |           |          | 
+ all_scores    | json                     |           |          | 
+ inference_ms  | double precision         |           |          | 
+ cache_hit     | boolean                  |           |          | 
+ error_message | text                     |           |          | 
+ created_at    | timestamp with time zone |           | not null | 
+ updated_at    | timestamp with time zone |           | not null | 
+Indexes:
+    "image_jobs_pkey" PRIMARY KEY, btree (id)
+    "ix_image_jobs_status" btree (status)
+

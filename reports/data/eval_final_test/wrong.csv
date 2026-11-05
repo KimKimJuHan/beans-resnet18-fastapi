@@ -1,0 +1,7 @@
+file,actual,predicted,score,correct
+bean_rust/bean_rust_test.15.jpg,bean_rust,angular_leaf_spot,0.7649,False
+bean_rust/bean_rust_test.28.jpg,bean_rust,angular_leaf_spot,0.8427,False
+bean_rust/bean_rust_test.3.jpg,bean_rust,angular_leaf_spot,0.5299,False
+bean_rust/bean_rust_test.31.jpg,bean_rust,angular_leaf_spot,0.5665,False
+healthy/healthy_test.10.jpg,healthy,bean_rust,0.8859,False
+healthy/healthy_test.27.jpg,healthy,bean_rust,0.669,False

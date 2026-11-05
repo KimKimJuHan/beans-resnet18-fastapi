@@ -1,0 +1,9 @@
+# 상태별 개수
+# 실행시각: 2026-11-04 11:51:42 KST
+$ docker compose exec -T postgres psql -U vision_user -d vision_db -c 'SELECT status, count(*) FROM image_jobs GROUP BY status;'
+
+ status | count 
+--------+-------
+ done   |     2
+(1 row)
+

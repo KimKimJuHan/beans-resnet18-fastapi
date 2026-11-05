@@ -1,0 +1,11 @@
+# FastAPI 헬스
+# 실행시각: 2026-11-04 11:51:37 KST
+$ curl -s -i http://127.0.0.1:8000/health
+
+HTTP/1.1 200 OK
+date: Wed, 04 Nov 2026 02:51:37 GMT
+server: uvicorn
+content-length: 15
+content-type: application/json
+
+{"status":"ok"}

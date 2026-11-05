@@ -1,0 +1,5 @@
+# Redis DB1 캐시 키·TTL
+# 실행시각: 2026-11-04 11:51:42 KST
+$ docker compose exec -T redis redis-cli -n 1 --scan --pattern 'vision:classify:*' | while read k; do echo "$k ttl=$(docker compose exec -T redis redis-cli -n 1 ttl $k </dev/null)"; done
+
+vision:classify:cb1b1b00462556cb:e7ac409cda99b323fa9d70f07902f2d88ceee90f3e2a920de0cccb931598cae1 ttl=600

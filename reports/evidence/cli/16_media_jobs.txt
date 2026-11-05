@@ -1,0 +1,10 @@
+# 업로드 원본 저장 위치
+# 실행시각: 2026-11-04 11:51:42 KST
+$ ls -la media/jobs | head -20
+
+total 292
+drwxrwxrwx 1 user1 user1   4096 Nov  4 11:51 .
+drwxrwxrwx 1 user1 user1   4096 Nov  4 10:23 ..
+-rwxrwxrwx 1 user1 user1      0 Nov  4 10:23 .gitkeep
+-rwxrwxrwx 1 user1 user1 163974 Nov  4 11:46 35017f9ffd3b4ec993a31064de900b27.bin
+-rwxrwxrwx 1 user1 user1 130871 Nov  4 11:51 a9bb07e6d9094afcbbf9d6cd583d8715.bin

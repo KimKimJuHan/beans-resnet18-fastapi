@@ -1,0 +1,10 @@
+split,class,count
+train,angular_leaf_spot,345
+train,bean_rust,348
+train,healthy,341
+validation,angular_leaf_spot,44
+validation,bean_rust,45
+validation,healthy,44
+test,angular_leaf_spot,43
+test,bean_rust,43
+test,healthy,42

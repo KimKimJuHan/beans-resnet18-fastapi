@@ -1,0 +1,47 @@
+ 
+ -------------- celery@DESKTOP-L2VKHDQ v5.6.3 (recovery)
+--- ***** ----- 
+-- ******* ---- Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.43 2026-11-04 11:52:46
+- *** --- * --- 
+- ** ---------- [config]
+- ** ---------- .> app:         vision_ai:0x786e3908eb10
+- ** ---------- .> transport:   redis://:**@127.0.0.1:6379/2
+- ** ---------- .> results:     redis://127.0.0.1:6379/3
+- *** --- * --- .> concurrency: 1 (solo)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** ----- 
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+                
+
+[tasks]
+  . ai.classify_job
+
+[2026-11-04 11:52:46,986: INFO/MainProcess] Connected to redis://:**@127.0.0.1:6379/2
+[2026-11-04 11:52:46,990: INFO/MainProcess] mingle: searching for neighbors
+[2026-11-04 11:52:48,000: INFO/MainProcess] mingle: all alone
+[2026-11-04 11:52:48,009: INFO/MainProcess] celery@DESKTOP-L2VKHDQ ready.
+[2026-11-04 11:52:48,011: INFO/MainProcess] Task ai.classify_job[9a2aeec0-990b-4866-824f-cf69e1789ab3] received
+[2026-11-04 11:52:48,035: INFO/MainProcess] Task ai.classify_job[9a2aeec0-990b-4866-824f-cf69e1789ab3] succeeded in 0.023513887000262912s: {'job_id': 3, 'status': 'done'}
+[2026-11-04 11:55:44,998: INFO/MainProcess] Task ai.classify_job[dde7974b-8997-4604-9f04-7fe2b0893b50] received
+[2026-11-04 11:55:47,600: WARNING/MainProcess] Using a slow image processor as `use_fast` is unset and a slow processor was saved with this model. `use_fast=True` will be the default behavior in v4.52, even if the model was saved with a slow processor. This will result in minor differences in outputs. You'll still be able to use a slow processor with `use_fast=False`.
+[2026-11-04 11:55:47,601: WARNING/MainProcess] Device set to use cpu
+[2026-11-04 11:55:47,644: INFO/MainProcess] Task ai.classify_job[dde7974b-8997-4604-9f04-7fe2b0893b50] succeeded in 2.6456394899996667s: {'job_id': 4, 'status': 'done'}
+[2026-11-04 11:55:47,660: INFO/MainProcess] Task ai.classify_job[54701bdf-be49-4f09-ab94-badd48beb45f] received
+[2026-11-04 11:55:47,672: INFO/MainProcess] Task ai.classify_job[54701bdf-be49-4f09-ab94-badd48beb45f] succeeded in 0.011543444000380987s: {'job_id': 5, 'status': 'done'}
+[2026-11-04 11:55:47,889: INFO/MainProcess] Task ai.classify_job[f4a478b1-ca99-498e-a3ba-319a9d0f5bdf] received
+[2026-11-04 11:55:47,918: INFO/MainProcess] Task ai.classify_job[f4a478b1-ca99-498e-a3ba-319a9d0f5bdf] succeeded in 0.028889303999676486s: {'job_id': 6, 'status': 'done'}
+[2026-11-04 11:55:48,117: INFO/MainProcess] Task ai.classify_job[bf2bb61b-eac2-4346-9b51-e6746ac85151] received
+[2026-11-04 11:55:48,128: INFO/MainProcess] Task ai.classify_job[bf2bb61b-eac2-4346-9b51-e6746ac85151] succeeded in 0.01016777099994215s: {'job_id': 7, 'status': 'done'}
+[2026-11-04 11:55:48,343: INFO/MainProcess] Task ai.classify_job[5447ec36-f9cc-4fa0-a5da-57c24dba5969] received
+[2026-11-04 11:55:48,376: INFO/MainProcess] Task ai.classify_job[5447ec36-f9cc-4fa0-a5da-57c24dba5969] succeeded in 0.033244438999645354s: {'job_id': 8, 'status': 'done'}
+[2026-11-04 11:55:48,568: INFO/MainProcess] Task ai.classify_job[a07cbe58-d131-4633-9bc2-ed7b15162933] received
+[2026-11-04 11:55:48,577: INFO/MainProcess] Task ai.classify_job[a07cbe58-d131-4633-9bc2-ed7b15162933] succeeded in 0.008246785999290296s: {'job_id': 9, 'status': 'done'}
+[2026-11-04 11:55:48,788: INFO/MainProcess] Task ai.classify_job[fb7e84ce-e0db-4d20-907d-72dea8155f2b] received
+[2026-11-04 11:55:48,823: INFO/MainProcess] Task ai.classify_job[fb7e84ce-e0db-4d20-907d-72dea8155f2b] succeeded in 0.03470002799986105s: {'job_id': 10, 'status': 'done'}
+[2026-11-04 11:55:49,010: INFO/MainProcess] Task ai.classify_job[afd049b2-83e5-438b-9ce1-aa0f4432de0a] received
+[2026-11-04 11:55:49,018: INFO/MainProcess] Task ai.classify_job[afd049b2-83e5-438b-9ce1-aa0f4432de0a] succeeded in 0.007625778999681643s: {'job_id': 11, 'status': 'done'}
+[2026-11-04 11:55:49,253: INFO/MainProcess] Task ai.classify_job[5fe20124-2e2a-4534-8da0-619dd97c4fd8] received
+[2026-11-04 11:55:49,282: INFO/MainProcess] Task ai.classify_job[5fe20124-2e2a-4534-8da0-619dd97c4fd8] succeeded in 0.028775532000508974s: {'job_id': 12, 'status': 'done'}
+[2026-11-04 11:55:49,477: INFO/MainProcess] Task ai.classify_job[9f08553b-b596-48c9-a21e-a6468b16e541] received
+[2026-11-04 11:55:49,485: INFO/MainProcess] Task ai.classify_job[9f08553b-b596-48c9-a21e-a6468b16e541] succeeded in 0.007748705000267364s: {'job_id': 13, 'status': 'done'}

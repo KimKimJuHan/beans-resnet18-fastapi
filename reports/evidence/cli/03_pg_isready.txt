@@ -1,0 +1,5 @@
+# PostgreSQL 준비 상태
+# 실행시각: 2026-11-04 11:51:37 KST
+$ docker compose exec -T postgres pg_isready -U vision_user -d vision_db
+
+/var/run/postgresql:5432 - accepting connections

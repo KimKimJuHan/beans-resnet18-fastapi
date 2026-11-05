@@ -1,0 +1,7 @@
+# Docker 컨테이너 상태
+# 실행시각: 2026-11-04 11:51:37 KST
+$ docker compose ps
+
+NAME                          IMAGE                COMMAND                  SERVICE    CREATED          STATUS                    PORTS
+fastapi_resnet18-postgres-1   postgres:17-alpine   "docker-entrypoint.s…"   postgres   40 minutes ago   Up 40 minutes (healthy)   127.0.0.1:5432->5432/tcp
+fastapi_resnet18-redis-1      redis:7.4-alpine     "docker-entrypoint.s…"   redis      40 minutes ago   Up 40 minutes (healthy)   127.0.0.1:6379->6379/tcp

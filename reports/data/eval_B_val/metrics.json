@@ -1,0 +1,54 @@
+{
+  "total": 133,
+  "correct": 129,
+  "accuracy": 0.9699,
+  "macro_f1": 0.97,
+  "per_class": {
+    "angular_leaf_spot": {
+      "support": 44,
+      "precision": 1.0,
+      "recall": 0.9545,
+      "f1": 0.9767
+    },
+    "bean_rust": {
+      "support": 45,
+      "precision": 0.9565,
+      "recall": 0.9778,
+      "f1": 0.967
+    },
+    "healthy": {
+      "support": 44,
+      "precision": 0.9556,
+      "recall": 0.9773,
+      "f1": 0.9663
+    }
+  },
+  "confusion_matrix": {
+    "angular_leaf_spot": {
+      "angular_leaf_spot": 42,
+      "bean_rust": 1,
+      "healthy": 1
+    },
+    "bean_rust": {
+      "angular_leaf_spot": 0,
+      "bean_rust": 44,
+      "healthy": 1
+    },
+    "healthy": {
+      "angular_leaf_spot": 0,
+      "bean_rust": 1,
+      "healthy": 43
+    }
+  },
+  "diseased_vs_healthy": {
+    "TP_diseased_found": 87,
+    "TN_healthy_ok": 43,
+    "FP_healthy_called_diseased": 1,
+    "FN_diseased_missed": 2,
+    "accuracy": 0.9774,
+    "precision": 0.9886,
+    "recall": 0.9775
+  },
+  "model": "artifacts/beans_resnet18_full",
+  "data": "dataset/val"
+}
